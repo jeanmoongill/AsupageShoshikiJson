@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render
 from django.views.generic.edit import FormView
 
@@ -24,6 +24,17 @@ class AccountLogin(FormView):
 
             context = {'login_error': 'please input a correct ID and PW'}
             return render(request, 'index.html', context=context)
+
+
+
+#log out
+def logout_view(request):
+
+    #remove session
+    logout(request)
+    #redirect to login
+    return render(request, template_name='index.html')
+
 
 
 
