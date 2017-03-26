@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="7e52e52e-fb80-4650-81b7-eca091f5de64">
+      <user-name>root</user-name>
+      <user-password>dfc7dfc5dfc5dfc4</user-password>
+      <schema-pattern>asupage.*</schema-pattern>
+      <default-schemas>asupage.*</default-schemas>
+    </data-source>
+    <data-source name="Django default2" uuid="a22064e3-ecab-4cef-a23b-b6c7fb89da60">
+      <user-name>root</user-name>
+      <user-password>dfc7dfc5dfc5dfc4</user-password>
+      <schema-pattern>asupage.*</schema-pattern>
+      <default-schemas>asupage.*</default-schemas>
+    </data-source>
+  </component>
+</project>
