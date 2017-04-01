@@ -120,14 +120,15 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-class Shoshiki(models.Model):
-    name = models.CharField(max_length=100)
+class Soshiki(models.Model):
+    name = models.CharField(max_length=255)
     type = models.IntegerField(blank=True, null=True)
     is_active = models.IntegerField(blank=True, null=True)
+    code = models.IntegerField(unique=True)
 
     class Meta:
         managed = False
-        db_table = 'shoshiki'
+        db_table = 'soshiki'
 
 
 class User(models.Model):

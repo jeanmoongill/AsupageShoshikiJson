@@ -1,14 +1,39 @@
-
 {% extends 'base.html' %}
+
+{% load static %}
+
+{% block extendcss %}
+    <link href="{% static 'bootstrap/css/bootstrap-select.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block extendjs %}
+    <script src="{% static 'bootstrap/js/bootstrap-select.min.js' %}"></script>
+{% endblock %}
 
 
 {% block content %}
 
-    <h1>Asupage組織管理</h1>
+    <div class="page-header">
+        <h1>会社組織</h1>
+        <p>Asupage会社組織情報</p>
+    </div>
 
-    <h2>検索AREA</h2>
+    <!-- select -->
+    <div class="form-row">
+        <select class="selectpicker" data-style="btn-info">
+          <option>第１システム部</option>
+          <option>第２システム部</option>
+          <option>第３システム部</option>
+          <option>インフラソリューション部</option>
+        </select>
+    </div>
 
-    <h2>datatables</h2>
+    <!-- datatable -->
+    <div class="row">
+
+    </div>
+
+
 
 
 {% endblock %}

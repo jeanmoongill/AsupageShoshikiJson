@@ -19,7 +19,9 @@ class AccountLogin(FormView):
 
         if user is not None:
             login(request, user)
-            return render(request, 'shoshiki.html')
+
+            #save session in request
+
         else:
 
             context = {'login_error': 'please input a correct ID and PW'}
