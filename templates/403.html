@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+% load static %}
+
+
+{% block content %}
+    <div class="container">
+      <div class="jumbotron">
+        <h1>権限がありません。</h1>
+        <p>
+            <a href="{% url 'login_page' %}">こちら</a>をから再ログインしてください。
+        </p>
+      </div>
+    </div>
+
+{% endblock %}
+

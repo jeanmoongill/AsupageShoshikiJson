@@ -4,10 +4,19 @@
 
 {% block extendcss %}
     <link href="{% static 'bootstrap/css/bootstrap-select.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/dataTables.jqueryui.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+
 {% endblock %}
 
 {% block extendjs %}
     <script src="{% static 'bootstrap/js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/dataTables.bootstrap.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/dataTables.jqueryui.min.js' %}"></script>
+
+
+    <script src="{% static 'js/soshiki.js' %}"></script>
 {% endblock %}
 
 
@@ -21,19 +30,46 @@
     <!-- select -->
     <div class="form-row">
         <select class="selectpicker" data-style="btn-info">
-          <option>第１システム部</option>
-          <option>第２システム部</option>
-          <option>第３システム部</option>
-          <option>インフラソリューション部</option>
+            {% if Soshikis %}
+                {% for soshiki in Soshikis %}
+                    <option data="{{ soshiki.code }}">{{ soshiki.name }}</option>
+                {% endfor %}
+            {% endif %}
         </select>
+
+        <!-- 検索ボタン -->
+        <div style="margin-top: 10px;">
+            <button type="button" class="btn btn-success">検索</button>
+        </div>
     </div>
 
     <!-- datatable -->
-    <div class="row">
-
+    <div class="form-row">
+        <table id="soshiki" class="table table-striped table-bordered" cellpadding="0">
+            <thead class="bg-info">
+                <tr>
+                    <th>社員ID</th>
+                    <th>社員名</th>
+                    <th>組織</th>
+                    <th>役職</th>
+                    <th>入社時間</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if UserInfo %}
+                    {% for user in UserInfo %}
+                    <tr>
+                        <td>{{ user.id|safe }}</td>
+                        <td>{{ user.name|safe }}</td>
+                        <td>{{ user.soshiki.name|safe }}</td>
+                        <td>{{ user.title.name|safe }}</td>
+                        <td>{{ user.create_time|date:'Y-m-d' }}</td>
+                    </tr>
+                    {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
     </div>
-
-
 
 
 {% endblock %}
