@@ -56,13 +56,33 @@ def to_top(request):
 
     if request.method == "POST":
 
+        #get soshiki code from post
+        soshiki_code = request.POST.get('soshikiCode', None)
+
         context = {}
+
+        if soshiki_code:
+            #get user info from db
+
+            soshikiInfo = Soshiki.objects.get(is_active=1, code=soshiki_code)
+
+            soshiki_id = soshikiInfo.id
+            soshiki_name = soshikiInfo.name
+
+            userInfo = UserInfo.objects.filter(soshiki = soshiki_id,
+                                               is_active = 1)
+
+            context['soshikiName'] = soshiki_name
+
+        else:
+            # get data from user_info
+            userInfo = UserInfo.objects.filter(is_active=1)
+
+
+
 
         #get soshiki Info from database
         soshiki_list = Soshiki.objects.filter(is_active = 1)
-
-        #get data from user_info
-        userInfo = UserInfo.objects.filter(is_active = 1)
 
         #add soshiki to dic
         context['Soshikis'] = soshiki_list

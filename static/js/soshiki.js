@@ -7,9 +7,9 @@ $(document).ready(function () {
        searching: false,
        "language": {
             "sProcessing":   "処理中...",
-            "sLengthMenu":   "_MENU_ 件表示",
+            "sLengthMenu":   "_MENU_件表示",
             "sZeroRecords":  "データはありません。",
-            "sInfo":         " _TOTAL_ 件中 _START_ から _END_ まで表示",
+            "sInfo":         " _END_/_TOTAL_ 件",
             "sInfoEmpty":    " 0 件中 0 から 0 まで表示",
             "sInfoFiltered": "（全 _MAX_ 件より抽出）",
             "sInfoPostFix":  "",
