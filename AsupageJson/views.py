@@ -1,6 +1,6 @@
 from django.contrib.auth import authenticate, login, logout
 from django.core.exceptions import PermissionDenied
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
 from .models import Soshiki, UserInfo
 
@@ -22,6 +22,7 @@ class AccountLogin(FormView):
             login(request, user)
 
             #save session in request
+            return redirect(to_top)
 
         else:
 
@@ -78,9 +79,6 @@ def to_top(request):
             # get data from user_info
             userInfo = UserInfo.objects.filter(is_active=1)
 
-
-
-
         #get soshiki Info from database
         soshiki_list = Soshiki.objects.filter(is_active = 1)
 
@@ -91,4 +89,13 @@ def to_top(request):
         return render(request, template_name='shoshiki.html', context=context)
 
     else:
-        raise PermissionDenied
+
+        context = {}
+
+        soshiki_list = Soshiki.objects.filter(is_active=1)
+        userInfo = UserInfo.objects.filter(is_active=1)
+
+        context['Soshikis'] = soshiki_list
+        context['UserInfo'] = userInfo
+
+        return render(request, template_name='shoshiki.html', context=context)
