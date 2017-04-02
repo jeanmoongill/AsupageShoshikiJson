@@ -4,6 +4,7 @@
 
 $(document).ready(function () {
    $('#soshiki').DataTable({
+       ordering: false,
        searching: false,
        "language": {
             "sProcessing":   "処理中...",

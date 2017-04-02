@@ -6,6 +6,7 @@
     <link href="{% static 'bootstrap/css/bootstrap-select.min.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrap/css/dataTables.jqueryui.min.css' %}" rel="stylesheet">
 
+
 {% endblock %}
 
 {% block extendjs %}
@@ -62,6 +63,7 @@
     <div class="form-row">
         <form id="searchForm" method="post" action="{% url 'top_page' %}">
             {% csrf_token %}
+            組織検索：
             <select id="soshikiSel" class="selectpicker" data-style="btn-info">
                 {% if Soshikis %}
                     {% for soshiki in Soshikis %}

@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17d2f96c-327f-41ba-a23c-c5d1431e8948" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/Sorting icons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/css/dataTables.uikit.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/js/dataTables.uikit.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bootstrap/css/jquery.dataTables.min.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AsupageJson/views.py" afterPath="$PROJECT_DIR$/AsupageJson/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-select.min.css" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-select.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/soshiki.js" afterPath="$PROJECT_DIR$/static/js/soshiki.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoshiki.html" afterPath="$PROJECT_DIR$/templates/shoshiki.html" />
@@ -48,11 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shoshiki.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoshiki.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/shoshiki.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="74" column="74" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -60,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soshiki.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="soshiki.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/soshiki.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="75">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="false" />
               </folding>
@@ -135,9 +134,9 @@
         <option value="$PROJECT_DIR$/AsupageJson/models.py" />
         <option value="$PROJECT_DIR$/templates/403.html" />
         <option value="$PROJECT_DIR$/static/bootstrap/css/jquery.dataTables.min.css" />
-        <option value="$PROJECT_DIR$/static/js/soshiki.js" />
         <option value="$PROJECT_DIR$/AsupageJson/views.py" />
         <option value="$PROJECT_DIR$/templates/shoshiki.html" />
+        <option value="$PROJECT_DIR$/static/js/soshiki.js" />
       </list>
     </option>
   </component>
@@ -676,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491054787168</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="組織検索機能追加">
+      <created>1491118312113</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491118312113</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -729,7 +735,8 @@
     <MESSAGE value="top画面を作成&#10;logo 削除" />
     <MESSAGE value="ログアウト画面作成" />
     <MESSAGE value="組織画面修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="組織画面修正" />
+    <MESSAGE value="組織検索機能追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="組織検索機能追加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -981,14 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -1120,22 +1119,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/soshiki.js">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/shoshiki.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="74" column="74" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/soshiki.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
