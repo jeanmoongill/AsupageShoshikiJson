@@ -4,8 +4,6 @@
     <list default="true" id="17d2f96c-327f-41ba-a23c-c5d1431e8948" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-select.min.css" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-select.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/soshiki.js" afterPath="$PROJECT_DIR$/static/js/soshiki.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoshiki.html" afterPath="$PROJECT_DIR$/templates/shoshiki.html" />
     </list>
     <ignored path="AsupageShoshikiJson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -682,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491118312113</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="組織検索機能追加">
+      <created>1491120322715</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491120322715</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
