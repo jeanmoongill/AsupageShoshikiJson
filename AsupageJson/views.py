@@ -1,8 +1,10 @@
 from django.contrib.auth import authenticate, login, logout
+from django.db import connection
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
-from .models import Soshiki, UserInfo
+from .models import Soshiki, UserInfo, TitleInfo
+
 
 
 class AccountLogin(FormView):
@@ -59,32 +61,80 @@ def to_top(request):
 
         #get soshiki code from post
         soshiki_code = request.POST.get('soshikiCode', None)
+        title_code = request.POST.get('titleid', None)
 
         context = {}
 
-        if soshiki_code:
-            #get user info from db
-
-            soshikiInfo = Soshiki.objects.get(is_active=1, code=soshiki_code)
-
-            soshiki_id = soshikiInfo.id
-            soshiki_name = soshikiInfo.name
-
-            userInfo = UserInfo.objects.filter(soshiki = soshiki_id,
-                                               is_active = 1)
-
-            context['soshikiName'] = soshiki_name
+        #while click button is clicked
+        if "clear" in request.POST:
+            userInfo = UserInfo.objects.filter(is_active=1)
+            context['UserInfo'] = userInfo
 
         else:
-            # get data from user_info
-            userInfo = UserInfo.objects.filter(is_active=1)
+
+            query_string = '''
+                select
+
+                  user_info.id,
+                  user_info.name,
+                  title_info.name,
+                  soshiki.name,
+                  user_info.create_time
+
+                from user_info
+
+                Left JOIN soshiki
+                ON user_info.soshiki = soshiki.id
+                Left Join title_info
+                On user_info.title = title_info.id
+
+                WHERE user_info.is_active = 1
+                AND soshiki.is_active = 1
+                AND title_info.is_active = 1
+            '''
+
+            param = []
+
+            if soshiki_code and soshiki_code is not 0:
+
+                query_string += " AND soshiki = %s "
+                param.append(soshiki_code)
+
+
+            if title_code and title_code is not 0:
+                query_string += " AND title = %s"
+                param.append(title_code)
+
+            cursor = connection.cursor()
+            cursor.execute(query_string, param)
+            userInfo = cursor.fetchall()
+
+            userInfoList = []
+
+            #userInfo to list
+            for user in userInfo:
+                userInfoList.append({"id":user[0],
+                                     "name":user[1],
+                                     "title.name":user[2],
+                                     "soshiki.name":user[3],
+                                     "create_time":user[4]},)
+
+            context['UserInfo'] = userInfoList
+
+            soshiki_name = Soshiki.objects.get(is_active=1, code=soshiki_code)
+            title_name = TitleInfo.objects.get(is_active=1, id=title_code)
+            context['soshikiName'] = soshiki_name
+            context['titleName'] = title_name
 
         #get soshiki Info from database
         soshiki_list = Soshiki.objects.filter(is_active = 1)
+        titleInfo = TitleInfo.objects.filter(is_active=1)
 
         #add soshiki to dic
         context['Soshikis'] = soshiki_list
-        context['UserInfo'] = userInfo
+        context['TitleInfo'] = titleInfo
+
+
 
         return render(request, template_name='shoshiki.html', context=context)
 
@@ -94,8 +144,10 @@ def to_top(request):
 
         soshiki_list = Soshiki.objects.filter(is_active=1)
         userInfo = UserInfo.objects.filter(is_active=1)
+        titleInfo = TitleInfo.objects.filter(is_active = 1)
 
         context['Soshikis'] = soshiki_list
         context['UserInfo'] = userInfo
+        context['TitleInfo'] = titleInfo
 
         return render(request, template_name='shoshiki.html', context=context)

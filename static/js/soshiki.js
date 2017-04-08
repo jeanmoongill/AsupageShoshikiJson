@@ -4,11 +4,11 @@
 
 $(document).ready(function () {
    $('#soshiki').DataTable({
-       ordering: false,
+       ordering: true,
        searching: false,
        "language": {
             "sProcessing":   "処理中...",
-            "sLengthMenu":   "_MENU_件表示",
+            "sLengthMenu":   "",
             "sZeroRecords":  "データはありません。",
             "sInfo":         " _END_/_TOTAL_ 件",
             "sInfoEmpty":    " 0 件中 0 から 0 まで表示",

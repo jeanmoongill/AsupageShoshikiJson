@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="693217293">
+  <component name="DataSourceManagerImpl" format="xml" hash="2813743230">
     <data-source source="LOCAL" name="Django default" uuid="7e52e52e-fb80-4650-81b7-eca091f5de64">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

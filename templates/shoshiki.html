@@ -20,7 +20,9 @@
 
     <script>
 
-        var selectedSoshiki = {% if soshikiName %}"{{ soshikiName }}"{% endif %}
+        var selectedSoshiki = {% if soshikiName %}"{{ soshikiName }}"{% else %}null{% endif %};
+        var titleName = {% if titleName %}"{{ titleName }}"{% else %}null{% endif %};
+        var usertest = {% if UserInfo %}"{{ UserInfo|safe }}"{% else %}null{% endif %};
 
         $(document).ready(function () {
 
@@ -28,24 +30,58 @@
                 $("#soshikiSel").val(selectedSoshiki);
             }
 
+            if(titleName != null){
+                $("#titleSel").val(titleName);
+            }
+
 
             $("#searchBtn").click(function () {
+
+                var Form = $("#searchForm");
 
                 $selectedOption = $("#soshikiSel > option:selected");
                 input_code = $selectedOption.data("code");
 
-                var input = $("<input>")
-                        .attr("type", "hidden")
-                        .attr("name", "soshikiCode").val(input_code)
+                $titleselected = $("#titleSel > option:selected");
+                title_id = $titleselected.data("code");
 
+                appendForm(Form, "soshikiCode", input_code);
+                appendForm(Form, "titleid", title_id);
 
-                $("#searchForm").append($(input));
                 $("#searchForm").submit();
-
 
             });
 
+            {# add hidden input to Form #}
+            var appendForm = function(Form, attrName, attr){
+                if(attr != "undefined" && attr != 0){
+                    var input = $("<input>")
+                            .attr("type", "hidden")
+                            .attr("name", attrName).val(attr);
+                }
+
+                $(Form).append($(input));
+            }
+
+
+            {# click ボタンを押下するとき#}
+            $("#clearBtn").click("click", function () {
+
+                //clear form
+                var form = $("#searchForm");
+
+                var input = $("<input>")
+                        .attr("type", "hidden")
+                        .attr("name", "clear")
+
+                form.append($(input)).submit();
+
+            });
+
+
         });
+
+
 
 
     </script>
@@ -63,49 +99,66 @@
     <div class="form-row">
         <form id="searchForm" method="post" action="{% url 'top_page' %}">
             {% csrf_token %}
-            組織検索：
-            <select id="soshikiSel" class="selectpicker" data-style="btn-info">
-                {% if Soshikis %}
-                    {% for soshiki in Soshikis %}
-                        <option data-code="{{ soshiki.code }}">{{ soshiki.name }}</option>
-                    {% endfor %}
-                {% endif %}
-            </select>
+            <div class="row">
+                <div class="col-xs-6">
+                 <h5>組織検索:</h5>
+                 <select id="soshikiSel" class="selectpicker">
+                        {% if Soshikis %}
+{#                            <option data-code="0">--all--</option>#}
+                            {% for soshiki in Soshikis %}
+                                <option data-code="{{ soshiki.code }}">{{ soshiki.name }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
 
+                {# 役職から検索 #}
+                <div class="col-xs-3">
+                    <h5>役職:</h5>
+                    <select id="titleSel" class="selectpicker">
+{#                        <option data-code="0">--all--</option>#}
+                        {% if TitleInfo %}
+                            {% for title in TitleInfo %}
+                                <option data-code="{{ title.id }}">{{ title.name }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
             <!-- 検索ボタン -->
             <div style="margin-top: 10px;">
-                <button id="searchBtn" type="button" class="btn btn-danger">検索</button>
+                <button id="searchBtn" type="button" class="btn btn-primary">検索</button>
+                <button id="clearBtn" type="button" class="btn btn-warning">クリア</button>
             </div>
         </form>
     </div>
 
     <!-- datatable -->
-    <div class="form-row">
-        <table id="soshiki" class="table table-striped table-bordered" width="100%">
-            <thead class="btn-success">
+    <table id="soshiki" class="table table-striped table-hover table-bordered dataTable no-footer" width="100%">
+        <thead class="bg-success" role="row">
+            <tr>
+                <th>社員ID</th>
+                <th>社員名</th>
+                <th>組織</th>
+                <th>役職</th>
+                <th>入社時間</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if UserInfo %}
+                {% for user in UserInfo %}
                 <tr>
-                    <th>社員ID</th>
-                    <th>社員名</th>
-                    <th>組織</th>
-                    <th>役職</th>
-                    <th>入社時間</th>
+                    <td>{{ user.id|safe }}</td>
+                    <td>{{ user.name|safe }}</td>
+                    <td>{{ user.soshiki.name|safe }}</td>
+                    <td>{{ user.title.name|safe }}</td>
+                    <td>{{ user.create_time|date:'Y-m-d' }}</td>
                 </tr>
-            </thead>
-            <tbody>
-                {% if UserInfo %}
-                    {% for user in UserInfo %}
-                    <tr>
-                        <td>{{ user.id|safe }}</td>
-                        <td>{{ user.name|safe }}</td>
-                        <td>{{ user.soshiki.name|safe }}</td>
-                        <td>{{ user.title.name|safe }}</td>
-                        <td>{{ user.create_time|date:'Y-m-d' }}</td>
-                    </tr>
-                    {% endfor %}
-                {% endif %}
-            </tbody>
-        </table>
-    </div>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
 
 
 {% endblock %}
