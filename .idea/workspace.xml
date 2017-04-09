@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17d2f96c-327f-41ba-a23c-c5d1431e8948" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.paper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AsupageJson/views.py" afterPath="$PROJECT_DIR$/AsupageJson/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/soshiki.js" afterPath="$PROJECT_DIR$/static/js/soshiki.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoshiki.html" afterPath="$PROJECT_DIR$/templates/shoshiki.html" />
     </list>
     <ignored path="AsupageShoshikiJson.iws" />
@@ -57,8 +49,8 @@
       <file leaf-file-name="shoshiki.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/shoshiki.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="42" />
+            <state relative-caret-position="123">
+              <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -81,12 +73,12 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AsupageJson/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="48" />
+            <state relative-caret-position="154">
+              <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1491664280000" expanded="true" signature="1745:2177" ph="select * fro... user_info" />
-                <marker date="1491664280000" expanded="true" signature="1745:2264" ph="select user_... user_info" />
+                <marker date="1491697202000" expanded="true" signature="2103:2535" ph="select * fro... user_info" />
+                <marker date="1491697202000" expanded="true" signature="2103:2622" ph="select user_... user_info" />
               </folding>
             </state>
           </provider>
@@ -145,8 +137,8 @@
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/js/soshiki.js" />
-        <option value="$PROJECT_DIR$/AsupageJson/views.py" />
         <option value="$PROJECT_DIR$/templates/shoshiki.html" />
+        <option value="$PROJECT_DIR$/AsupageJson/views.py" />
       </list>
     </option>
   </component>
@@ -157,8 +149,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -297,7 +290,6 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="FullScreen" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -683,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491139141500</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="会社組織画面修正">
+      <created>1491664831008</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491664831008</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -696,7 +695,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28029078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -710,7 +709,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39041096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44254658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -738,7 +737,8 @@
     <MESSAGE value="組織画面修正" />
     <MESSAGE value="組織検索機能追加" />
     <MESSAGE value="ログイン画面修正&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="ログイン画面修正&#10;" />
+    <MESSAGE value="会社組織画面修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="会社組織画面修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -786,8 +786,8 @@
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1491664280000" expanded="true" signature="1745:2177" ph="select * fro... user_info" />
-            <marker date="1491664280000" expanded="true" signature="1745:2264" ph="select user_... user_info" />
+            <marker date="1491697202000" expanded="true" signature="2103:2535" ph="select * fro... user_info" />
+            <marker date="1491697202000" expanded="true" signature="2103:2622" ph="select user_... user_info" />
           </folding>
         </state>
       </provider>
@@ -1119,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/shoshiki.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="42" />
+        <state relative-caret-position="123">
+          <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#!!top" expanded="true" />
           </folding>
@@ -1129,12 +1129,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AsupageJson/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="48" />
+        <state relative-caret-position="154">
+          <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1491664280000" expanded="true" signature="1745:2177" ph="select * fro... user_info" />
-            <marker date="1491664280000" expanded="true" signature="1745:2264" ph="select user_... user_info" />
+            <marker date="1491697202000" expanded="true" signature="2103:2535" ph="select * fro... user_info" />
+            <marker date="1491697202000" expanded="true" signature="2103:2622" ph="select user_... user_info" />
           </folding>
         </state>
       </provider>
