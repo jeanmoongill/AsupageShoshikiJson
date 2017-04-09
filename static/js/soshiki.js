@@ -8,7 +8,7 @@ $(document).ready(function () {
        searching: false,
        "language": {
             "sProcessing":   "処理中...",
-            "sLengthMenu":   "",
+            "sLengthMenu":   "_MENU_",
             "sZeroRecords":  "データはありません。",
             "sInfo":         " _END_/_TOTAL_ 件",
             "sInfoEmpty":    " 0 件中 0 から 0 まで表示",
