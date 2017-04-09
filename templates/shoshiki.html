@@ -151,8 +151,8 @@
                 <tr>
                     <td>{{ user.id|safe }}</td>
                     <td>{{ user.name|safe }}</td>
-                    <td>{{ user.soshiki.name|safe }}</td>
-                    <td>{{ user.title.name|safe }}</td>
+                    <td>{{ user.soshiki|safe }}</td>
+                    <td>{{ user.title|safe }}</td>
                     <td>{{ user.create_time|date:'Y-m-d' }}</td>
                 </tr>
                 {% endfor %}

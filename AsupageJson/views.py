@@ -67,7 +67,18 @@ def to_top(request):
 
         #while click button is clicked
         if "clear" in request.POST:
-            userInfo = UserInfo.objects.filter(is_active=1)
+            userInfoList = UserInfo.objects.filter(is_active=1)
+
+            userInfo = []
+
+            for user in userInfoList:
+                userInfo.append({"id": user.id,
+                                 "name":user.name,
+                                 "title":user.title.name,
+                                 "soshiki":user.soshiki.name,
+                                 "create_time":user.create_time},)
+
+
             context['UserInfo'] = userInfo
 
         else:
@@ -115,8 +126,8 @@ def to_top(request):
             for user in userInfo:
                 userInfoList.append({"id":user[0],
                                      "name":user[1],
-                                     "title.name":user[2],
-                                     "soshiki.name":user[3],
+                                     "title":user[2],
+                                     "soshiki":user[3],
                                      "create_time":user[4]},)
 
             context['UserInfo'] = userInfoList
@@ -143,8 +154,18 @@ def to_top(request):
         context = {}
 
         soshiki_list = Soshiki.objects.filter(is_active=1)
-        userInfo = UserInfo.objects.filter(is_active=1)
-        titleInfo = TitleInfo.objects.filter(is_active = 1)
+        userInfoList = UserInfo.objects.filter(is_active=1)
+        titleInfo = TitleInfo.objects.filter(is_active=1)
+
+        userInfo = []
+
+        for user in userInfoList:
+            userInfo.append({"id": user.id,
+                             "name": user.name,
+                             "title": user.title.name,
+                             "soshiki": user.soshiki.name,
+                             "create_time": user.create_time}, )
+
 
         context['Soshikis'] = soshiki_list
         context['UserInfo'] = userInfo
