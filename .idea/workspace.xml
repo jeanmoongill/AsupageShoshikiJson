@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17d2f96c-327f-41ba-a23c-c5d1431e8948" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salary/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salary/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salary/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salary/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salary/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/salary/salaryInfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/salary/salaryInput.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AsupageJson/views.py" afterPath="$PROJECT_DIR$/AsupageJson/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AsupageShoshikiJson/settings.py" afterPath="$PROJECT_DIR$/AsupageShoshikiJson/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AsupageShoshikiJson/urls.py" afterPath="$PROJECT_DIR$/AsupageShoshikiJson/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoshiki.html" afterPath="$PROJECT_DIR$/templates/shoshiki.html" />
     </list>
     <ignored path="AsupageShoshikiJson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -754,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491718112004</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="会社組織画面修正">
+      <created>1492329848813</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492329848813</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
