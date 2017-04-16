@@ -40,24 +40,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-
+                {#  <a class="navbar-brand" href="#">社内システム</a> #}
             </div>
+
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">組織検索</a>
+                        <a href="{% url 'top_page' %}">組織検索</a>
                     </li>
                     <li>
-                        <a href="#">給料明細</a>
+                        <a href="{% url 'SalaryTop' %}">給料明細</a>
                     </li>
                     <li>
                         <a href="#">目標達成</a>
                     </li>
-                    <li>
-                        <a href="{% url 'logout' %}">ログアウト</a>
-                    </li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">管理画面<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">組織管理</a></li>
+                        <li><a href="{% url 'salaryInput' %}">給料登録</a></li>
+                        <li><a href="#">社員目標管理</a></li>
+                      </ul>
+                  </li>
+
+                    <li><a href="{% url 'logout' %}">ログアウト</a></li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -132,10 +132,14 @@ def to_top(request):
 
             context['UserInfo'] = userInfoList
 
-            soshiki_name = Soshiki.objects.get(is_active=1, code=soshiki_code)
-            title_name = TitleInfo.objects.get(is_active=1, id=title_code)
-            context['soshikiName'] = soshiki_name
-            context['titleName'] = title_name
+
+            if soshiki_code and soshiki_code is not 0:
+                soshiki = Soshiki.objects.get(is_active=1, code=soshiki_code)
+                context['soshikiName'] = soshiki.name
+
+            if title_code and title_code is not 0:
+                title = TitleInfo.objects.get(is_active=1, id=title_code)
+                context['titleName'] = title.name
 
         #get soshiki Info from database
         soshiki_list = Soshiki.objects.filter(is_active = 1)
@@ -144,8 +148,6 @@ def to_top(request):
         #add soshiki to dic
         context['Soshikis'] = soshiki_list
         context['TitleInfo'] = titleInfo
-
-
 
         return render(request, template_name='shoshiki.html', context=context)
 

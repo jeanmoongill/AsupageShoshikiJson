@@ -20,5 +20,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     # get Asupage shoshiki Json
-    url(r'', include('AsupageJson.urls'))
+    url(r'', include('AsupageJson.urls')),
+
+    #salary Info
+    url(r'', include('salary.urls')),
+
 ]
