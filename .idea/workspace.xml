@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="17d2f96c-327f-41ba-a23c-c5d1431e8948" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/salary/forms.py" afterPath="$PROJECT_DIR$/salary/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/salary/salaryInput.html" afterPath="$PROJECT_DIR$/templates/salary/salaryInput.html" />
     </list>
     <ignored path="AsupageShoshikiJson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +39,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="1005">
               <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
               <folding />
             </state>
@@ -47,8 +49,8 @@
       <file leaf-file-name="salaryInfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/salary/salaryInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1145">
-              <caret line="275" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#0;n#tr#8;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -65,16 +67,66 @@
                 <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#0;n#tr#6;n#table#0;n#div#1;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
+                <marker date="1492328680000" expanded="true" signature="176:237" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="352:1891" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="547:1850" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="574:685" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="712:823" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="850:963" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="1130:1243" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="1550:1661" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="1688:1821" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="1938:3115" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="1980:2050" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="2089:3096" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="2134:3075" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="2584:2720" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="2910:3045" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="3208:5822" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="3405:5782" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="3432:3565" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="5917:8563" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="5960:8547" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6002:6071" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6110:8528" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6155:8506" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6182:6293" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6320:6433" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6460:6573" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6600:6711" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6738:6851" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="6878:6990" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7017:7127" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7292:7403" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7430:7541" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7568:7680" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7707:7818" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="7984:8093" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8120:8253" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8637:10040" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8679:8748" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8788:10021" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8834:10000" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="8861:8997" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9024:9137" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9164:9277" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9304:9417" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9444:9557" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9584:9695" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9722:9833" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="9860:9971" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="10085:11345" ph="..." />
+                <marker date="1492328680000" expanded="true" signature="11140:11276" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salary/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -82,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salaryInput.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="salaryInput.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/salary/salaryInput.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="90" column="7" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,8 +157,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salary/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -125,8 +177,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salary/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -137,7 +189,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="630">
               <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding />
             </state>
@@ -147,7 +199,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AsupageJson/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="165">
               <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="41" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
@@ -192,11 +244,11 @@
         <option value="$PROJECT_DIR$/AsupageShoshikiJson/settings.py" />
         <option value="$PROJECT_DIR$/AsupageShoshikiJson/urls.py" />
         <option value="$PROJECT_DIR$/templates/salary/salaryInfo.html" />
-        <option value="$PROJECT_DIR$/templates/salary/salaryInput.html" />
-        <option value="$PROJECT_DIR$/salary/forms.py" />
         <option value="$PROJECT_DIR$/salary/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/salary/urls.py" />
+        <option value="$PROJECT_DIR$/salary/forms.py" />
+        <option value="$PROJECT_DIR$/templates/salary/salaryInput.html" />
       </list>
     </option>
   </component>
@@ -320,8 +372,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -608,7 +660,7 @@
       <module name="AsupageShoshikiJson" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="192.168.3.5" />
+      <option name="host" value="localhost" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -763,24 +815,24 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28432956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28836834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26438355" sideWeight="0.5048465" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29178083" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.269863" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26438355" sideWeight="0.4951535" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.269863" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28961748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26438355" sideWeight="0.4951535" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -865,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="370" column="29" selection-start-line="370" selection-start-column="29" selection-end-line="370" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3720">
           <caret line="248" column="27" selection-start-line="248" selection-start-column="27" selection-end-line="248" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5565">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-326">
           <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="24" column="15" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,9 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="386" column="0" selection-start-line="386" selection-start-column="0" selection-end-line="386" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,11 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="99" column="50" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1492314663000" expanded="true" signature="2103:2535" ph="select * fro... user_info" />
-            <marker date="1492314663000" expanded="true" signature="2103:2622" ph="select user_... user_info" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,48 +1142,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/settings.py">
+    <entry file="file://$PROJECT_DIR$/salary/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AsupageJson/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="135">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
-            <element signature="e#1#42#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/salary/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/salary/salaryInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="275" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#0;n#tr#8;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1173,50 +1183,116 @@
             <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#0;n#tr#6;n#table#0;n#div#1;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <marker date="1492328680000" expanded="true" signature="176:237" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="352:1891" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="547:1850" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="574:685" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="712:823" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="850:963" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="1130:1243" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="1550:1661" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="1688:1821" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="1938:3115" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="1980:2050" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="2089:3096" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="2134:3075" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="2584:2720" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="2910:3045" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="3208:5822" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="3405:5782" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="3432:3565" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="5917:8563" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="5960:8547" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6002:6071" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6110:8528" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6155:8506" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6182:6293" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6320:6433" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6460:6573" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6600:6711" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6738:6851" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="6878:6990" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7017:7127" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7292:7403" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7430:7541" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7568:7680" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7707:7818" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="7984:8093" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8120:8253" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8637:10040" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8679:8748" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8788:10021" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8834:10000" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="8861:8997" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9024:9137" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9164:9277" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9304:9417" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9444:9557" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9584:9695" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9722:9833" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="9860:9971" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="10085:11345" ph="..." />
+            <marker date="1492328680000" expanded="true" signature="11140:11276" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/salary/salaryInput.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="90" column="7" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/salary/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/salary/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/salary/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salary/urls.py">
+    <entry file="file://$PROJECT_DIR$/AsupageShoshikiJson/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="630">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AsupageJson/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="41" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#1#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
